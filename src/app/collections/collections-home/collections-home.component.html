@@ -1,1 +1,10 @@
-<p>collections-home works!</p>
+<app-divider>Table Component</app-divider>
+<app-table classNames="striped celled" [data]="data" [headers]="headers"></app-table>
+
+<app-divider>Tab Menu</app-divider>
+
+<app-tabs>
+    <a class="item" routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{exact: true}">Biography</a>
+    <a class="item" routerLinkActive="active" routerLink="./companies">Companies</a>
+    <a class="item" routerLinkActive="active" routerLink="./partners">Partners</a>
+</app-tabs>
